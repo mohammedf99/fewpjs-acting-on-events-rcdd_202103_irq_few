@@ -14,7 +14,7 @@ document.addEventListener("keydown", (e) => {
   if(e.key === "ArrowLeft") {
     let leftNumber = dodger.style.left.replace("px", "");
     let left = parseInt(leftNumber, 10);
-    dodger.style.left = `${left - 1}px`;
+    dodger.style.left = `${left - 10}px`;
   }
 })
 

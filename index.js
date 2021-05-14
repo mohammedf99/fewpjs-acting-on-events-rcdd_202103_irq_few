@@ -9,6 +9,6 @@ console.log(dodger.style.left);
 console.log(dodger.style.bottom);
 
 document.addEventListener("keydown", (e) => {
-  colsole.log(e.key);
+  console.log(e.key);
 })
 

@@ -12,9 +12,7 @@ document.addEventListener("keydown", (e) => {
   console.log(e.key);
   
   if(e.key === "ArrowLeft") {
-    let leftNumber = dodger.style.left.replace("px", "");
-    let left = parseInt(leftNumber, 10);
-    dodger.style.left = `${left - 1}px`;
+    moveDodgerLeft();
   }
 })
 
@@ -22,6 +20,8 @@ document.addEventListener("keydown", (e) => {
 function moveDodgerLeft() {
     let leftNumber = dodger.style.left.replace("px", "");
     let left = parseInt(leftNumber, 10);
-    dodger.style.left = `${left - 1}px`;
+    if (left > 0) {
+      dodger.style.left = `${left - 1}`;
+    }
 }
 
